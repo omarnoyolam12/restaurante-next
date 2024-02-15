@@ -9,9 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "testimonial": "linear-gradient(60deg, rgba(24,24,27,1) 50%, rgba(39,39,42,0.3) 100%), url('/img/testimonial.jpg')"
+      },
+      listStyleImage: {
+        checkmark: 'url("/img/check.svg")',
       },
     },
   },
