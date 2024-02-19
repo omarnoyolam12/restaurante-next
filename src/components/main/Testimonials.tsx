@@ -7,7 +7,7 @@ export const Testimonials = () => {
                 <div
                     className="w-full sm:w-2/3 lg:w-1/2 h-full flex justify-center items-start flex-col"
                 >
-                    <p className="text-amber-500 italic mb-3">Guessbook</p>
+                    <p className="text-amber-500 font-lora italic mb-3 text-xl">Guessbook</p>
                     <p className="text-5xl text-white font-light">Clients Testimonials</p>
                     <div className="w-48 h-[1px] bg-amber-500 mt-3 mb-10"></div>
 

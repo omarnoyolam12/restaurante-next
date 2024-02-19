@@ -36,7 +36,7 @@ export const Choose = () => {
             </figure>
 
             <div className="md:py-10">
-                <p className="font-light font italic text-amber-400 text-2xl">
+                <p className="font-light font-lora italic text-amber-500 text-xl">
                     What We Serve
                 </p>
                 <h3 className="text-3xl lg:text-5xl text-white font-bold mt-3">
