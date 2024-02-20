@@ -1,9 +1,12 @@
 import Image from "next/image";
-import Masonry from "react-layout-masonry";
+import Masonry from 'react-masonry-css'
 
 import { photos } from "@/data/gallery";
 
 export const GallerySection = () => {
+
+
+
     return (
         <section className="container mx-auto px-5 mt-10 lg:mt-20">
 
@@ -11,18 +14,24 @@ export const GallerySection = () => {
                 Gallery
             </h2>
 
-            <Masonry columns={{ 340: 1, 740: 2, 992: 3 }} gap={20}>
-                {
-                    photos.map((photo, index) => (
-                        <Image
-                            key={index}
-                            src={photo}
-                            alt="nuevo"
-                        />
-                    ))
-                }
+            <Masonry
+                breakpointCols={{
+                    default: 3,
+                    1024: 2,
+                    640: 1
+                }}
+                className="my-masonry-grid"
+                columnClassName="my-masonry-grid_column">
 
+                {photos.map((photo, index) => (
+                    <Image
+                        key={index}
+                        src={photo}
+                        alt="photos"
+                    />
+                ))}
             </Masonry>
+
         </section>
     )
 }
