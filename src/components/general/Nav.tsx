@@ -26,11 +26,11 @@ export const Nav = () => {
                 <li className={`text-white text-xl ${router.pathname === '/gallery' && 'bg-white text-zinc-800 px-5 py-1 rounded-sm'}`}>
                     <Link href="/gallery">Gallery</Link>
                 </li>
-                <li className="text-white text-xl">
-                    <a href="">Menu</a>
+                <li className={`text-white text-xl ${router.pathname === '/menu' && 'bg-white text-zinc-800 px-5 py-1 rounded-sm'}`}>
+                    <Link href="/menu">Menu</Link>
                 </li>
-                <li className="text-white text-xl">
-                    <a href="">Contact Us</a>
+                <li className={`text-white text-xl ${router.pathname === '/contact' && 'bg-white text-zinc-800 px-5 py-1 rounded-sm'}`}>
+                    <Link href="/contact">Contact Us</Link>
                 </li>
             </ul>
 

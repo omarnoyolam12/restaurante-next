@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 
 export const MenuMovil = () => {
 
@@ -27,16 +28,16 @@ export const MenuMovil = () => {
             >
                 <ul className="flex justify-center items-center gap-5 flex-col">
                     <li className="text-zinc-600 text-2xl">
-                        <a href="">Home</a>
+                        <Link href="/">Home</Link>
                     </li>
                     <li className="text-zinc-600 text-2xl">
-                        <a href="">About Us</a>
+                        <Link href="/gallery">Gallery</Link>
                     </li>
                     <li className="text-zinc-600 text-2xl">
-                        <a href="">Menu</a>
+                        <Link href="/menu">Menu</Link>
                     </li>
                     <li className="text-zinc-600 text-2xl">
-                        <a href="">Contact Us</a>
+                        <Link href="/contact">Contact Us</Link>
                     </li>
                 </ul>
 

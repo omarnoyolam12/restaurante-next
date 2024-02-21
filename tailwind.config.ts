@@ -12,11 +12,12 @@ const config: Config = {
         'lora': ['Lora', 'serif']
       },
       backgroundImage: {
-        "testimonial": "linear-gradient(60deg, rgba(24,24,27,1) 50%, rgba(39,39,42,0.3) 100%), url('/img/testimonial.jpg')"
+        "testimonial": "linear-gradient(60deg, rgba(24,24,27,1) 50%, rgba(39,39,42,0.3) 100%), url('/img/testimonial.jpg')",
+        "menu": "linear-gradient(60deg, rgba(24,24,27,1) 50%, rgba(39,39,42,0.3) 100%), url('/img/menu.jpg')"
       },
       listStyleImage: {
         checkmark: 'url("/img/check.svg")',
-      },
+      }
     },
   },
   plugins: [],

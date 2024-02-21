@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { categories } from "@/data/dishes";
 
@@ -18,7 +19,7 @@ export const Menu = () => {
                             key={category.category}
                             className="rounded bg-zinc-800 w-full h-60 overflow-hidden group"
                         >
-                            <a href="#" className="relative block h-full">
+                            <Link href={`/menu?cat=${category.category}`} className="relative block h-full">
                                 <Image
                                     src={category.img}
                                     fill
@@ -31,7 +32,7 @@ export const Menu = () => {
                                         {category.category}
                                     </p>
                                 </div>
-                            </a>
+                            </Link>
                         </article>
                     ))
                 }
